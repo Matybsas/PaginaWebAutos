@@ -1,3 +1,188 @@
-body{
-    background: black;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+body{
+    background: rgb(255, 255, 255);
+    color: aliceblue;
+}
+header{
+  background: rgba(29, 27, 27, 0.9);
+  width: 100%;
+  
+}
+.contenedor-general-header{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: rgb(29, 28, 28);
+}
+
+/* REDES SOCIALES */
+.contenedor-redes-sociales{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: end;
+    justify-content: end;
+}
+.contenedor-redes-sociales ul{
+    list-style: none;
+    overflow: hidden;
+    margin: 10px;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+.contenedor-redes-sociales ul li{
+    background: rgb(255, 79, 79);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 15px 0px 15px 0px;
+    border: 1px solid rgb(255, 79, 79);
+    
+}
+.contenedor-redes-sociales ul li:hover{
+    background: rgb(38, 36, 36);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 0px 15px 0px 15px;
+    border: 1px solid rgb(38, 36, 36);
+    box-shadow: 2px 2px 7px 2px white;
+    
+}
+.contenedor-redes-sociales ul li i{
+    text-align: center;
+    font-size: 25px;
+    color: aliceblue;
+}
+
+/* CONTENEDOR MENU*/
+.contedor-menu{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+}
+.contedor-menu ul{
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+}
+.contedor-menu ul li{
+    background: rgb(246, 90, 90);
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px 0px 15px 0px;
+    border: 2px solid rgb(246, 90, 90);
+    box-shadow: 2px 2px 5px 2px white;
+}
+.contedor-menu ul li:hover{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 0px 15px 0px 15px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 2px 2px 7px 2px white;
+}
+
+.contedor-menu ul li i{
+    margin-right: 10px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+/* CARRUSEL FOTOS */
+.carrousel{
+    width: 100%;
+    margin-top: 15px;
+  }
+  
+  .conteCarrousel{
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    text-align: center;
+    
+  
+  }
+  
+  .itemCarrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .itemCarrouselArrows{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; 
+  }
+  
+  .itemCarrouselArrows > i:hover {
+    cursor: pointer;
+  }
+  
+  
+  
+  .conteCarrouselController{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .conteCarrouselController > a{
+    text-decoration: none;
+    font-size: 2em;
+    color: grey;
+  }
+  
+  .itemCarrouselArrows > a > i{
+    color: white;
+  }
+  
+  /*FORMULARIO ENVIO */
+  .contenedor-general-formulario{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contenedor-formulario{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .contenedor-formulario form{
+   width: 80%;
+   height: 80%;
+   background: rgb(49, 48, 48);
+   color: rgb(255, 255, 255);
+   font-size: 30px;
+   display: flex;
+   flex-flow: column wrap;
+
+  }
+
+  

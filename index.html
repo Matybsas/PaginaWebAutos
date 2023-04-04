@@ -4,11 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONT AWESOME ICONOS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--ENLACE JAVASCRIPT-->
     <script src="index.js"></script>
+    <!--ENLACE HOJA DE ESTILO-->
     <link rel="stylesheet" href="estilos/style.css">
     <title>Agencia de Autos</title>
 </head>
 <body>
-    <h1>autos</h1>
+    <header>
+      <div class="contenedor-general-header">
+        <div class="contenedor-redes-logo">
+            <!--REDES SOCIALES-->
+           <div class="contenedor-redes-sociales">
+            <ul>
+                <li><a href="https://m.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.tiktok.com/es/"><i class="fa-brands fa-tiktok"></i></a> </li>
+                <li><a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a> </li>
+        
+            </ul>
+           </div>
+
+           <!--LOGO-->
+           
+
+
+            <!--MENU-->
+            <nav class="contedor-menu">
+                <ul>
+                    <li><i class="fa-sharp fa-solid fa-house"></i>Home</li>
+                    <li><i class="fa-solid fa-car-side"></i>Vehiculos</li>
+                    <li><i class="fa-solid fa-clipboard"></i>Presupuesto</li>
+                    <li><i class="fa-sharp fa-solid fa-building"></i>Nuestra Empresa</li>
+                    <li><i class="fa-solid fa-phone-volume"></i>Contacto</li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <!--CARRUSEL IMAGENES-->
+    <div class="carrousel">
+        <div class="conteCarrousel">
+            <div class="itemCarrousel" id="itemCarrousel-1">
+                <div class="itemCarrouselTarjeta"><img src="imagenes/MUSTANG.png" alt=""></div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-3">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#itemCarrousel-2">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrousel" id="itemCarrousel-2">
+                <div class="itemCarrouselTarjeta"><img src="imagenes/RAM.png" alt=""></div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-1">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#itemCarrousel-3">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrousel" id="itemCarrousel-3">
+                <div class="itemCarrouselTarjeta"><img src="imagenes/corvette.png" alt=""></div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-2">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#itemCarrousel-1">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="conteCarrouselController">
+            <a href="#itemCarrousel-1">•</a>
+            <a href="#itemCarrousel-2">•</a>
+            <a href="#itemCarrousel-3">•</a>
+        </div>
+    </div>
+    <!--FORMULARIO CONTACTO-->
+    <div class="contenedor-general-formulario">
+    <div class="contenedor-formulario">
+        <form action="page">
+        <label for="">Nombre</label>
+        <input type="text">
+        <label for="">Apellido</label>
+        <input type="text">
+        <label for="">Direccion</label>
+        <input type="text">
+        <label for="">Telefono</label>
+        <input type="text">
+        <label for="">Email</label>
+        <input type="text">
+        <input type="button" value="Enviar">
+    </form>
+</div>
+</div>
 </body>
 </html>
