@@ -161,7 +161,7 @@ header{
   
   /*FORMULARIO ENVIO */
   .contenedor-general-formulario{
-    background: rgb(25, 23, 23);
+    background: rgb(54, 51, 51);
     width: 100%;
     height: 100%;
     display: flex;
@@ -173,44 +173,67 @@ header{
     width: 40%;
     height: 600px;
     display: flex;
-    justify-content: center;
+    justify-content: end;
 
   }
  form{
   width: 80%;
-  background: red;
+  padding: 20px;
   text-align: center;
  }
+
  form input {
   text-align: center;
   border:2px solid whitesmoke;
-  border-radius: 50px;
+  border-radius: 0px 50px 50px 0px;
   width: 70%;
   height: 50px;
-  margin: 2%;
+  margin-bottom: 2%;
  }
- body{
-  font-family: "Font Awesome 5 Free"; 
-  font-weight: 900; 
- }
+
+form i{
+  background: rgb(41, 40, 40);
+  border: 1px solid rgb(41, 40, 40);
+  border-radius: 50px 0px 0px 50px;
+  text-align: center;
+  margin-bottom: 2%;
+  font-size: 25px;
+  padding-top: 9px;
+  width: 50px;
+  height: 50px;
+}
  form textarea{
+  
   border: 2px solid whitesmoke;
-  width: 100%;
+  width: 75%;
   height: 150px;
   border-radius: 5px;
  }
+ form button{
+  font-size: 30px;
+  color: aliceblue;
+  background: rgb(0, 98, 255);
+  padding: 15px;
+  border: 1px solid rgb(0, 98, 255);
+  border-radius: 15px;
+  margin: 15px;
+  padding: 5px;
+  width: 150px;
+ }
+
+ 
   .contacto{
     background: rgb(34, 32, 32);
     width: 30%;
-    height: 600px;
+    height: 680px;
     display: flex;
     flex-flow: column wrap;
     align-content: center;
-    justify-content: center;
+    justify-content:center;
   }
   /* FOTOS DE VEHICULOS */
 .autos-variados{
-  background: rgb(115, 115, 115);
+  background: rgb(255, 255, 255);
   width: 100%;
   display: flex;
   flex-flow: column;
@@ -237,7 +260,7 @@ header{
   font-size: 35px;
 }
 .contenedor-publicida{
- background: black;
+ background: rgb(255, 255, 255);
   width: 100%;
   height: 100%;
   display: flex;
@@ -264,7 +287,7 @@ header{
   justify-content: center;
 }
 .contenedor-presupuesto{
-  background: rgb(101, 101, 101);
+  background: rgb(45, 44, 44);
 width: 100%;
 height: 500px;
 }
