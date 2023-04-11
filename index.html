@@ -17,35 +17,42 @@
 </head>
 <body>
     <header>
-      <div class="contenedor-general-header">
-        <div class="contenedor-redes-logo">
-            <!--REDES SOCIALES-->
-           <div class="contenedor-redes-sociales">
-            <ul>
-                <li><a href="https://m.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.tiktok.com/es/"><i class="fa-brands fa-tiktok"></i></a> </li>
-                <li><a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a> </li>
-        
-            </ul>
-           </div>
-
-           <!--LOGO-->
-           
+        <div class="contenedor-general-header">
+         
+            <!--LOGO-->
+            <div class="logo-web">
+                <img src="imagenes/coke-sponsor-500x500px-1.jpg" style="width: 100px;" alt="">
+            </div>
 
 
             <!--MENU-->
-            <nav class="contedor-menu">
+            <div class="contedor-menu-general">
+                <nav class="contedor-menu">
+                    <ul>
+                        <li><i class="fa-sharp fa-solid fa-house"></i>Home</li>
+                        <li><i class="fa-solid fa-car-side"></i>Vehiculos</li>
+                        <li><i class="fa-solid fa-clipboard"></i>Presupuesto</li>
+                        <li><i class="fa-sharp fa-solid fa-building"></i>Nuestra Empresa</li>
+                        <li><i class="fa-solid fa-phone-volume"></i>Contacto</li>
+                    </ul>
+                </nav>
+            </div>       
+            
+            
+            <!--REDES SOCIALES-->
+           <div class="contenedor-redes">
                 <ul>
-                    <li><i class="fa-sharp fa-solid fa-house"></i>Home</li>
-                    <li><i class="fa-solid fa-car-side"></i>Vehiculos</li>
-                    <li><i class="fa-solid fa-clipboard"></i>Presupuesto</li>
-                    <li><i class="fa-sharp fa-solid fa-building"></i>Nuestra Empresa</li>
-                    <li><i class="fa-solid fa-phone-volume"></i>Contacto</li>
+                    <li><a href="https://m.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                     <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                     <li><a href="https://www.tiktok.com/es/"><i class="fa-brands fa-tiktok"></i></a> </li>
+                     <li><a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a> </li>
+        
                 </ul>
-            </nav>
-        </div>
+           </div>
 
+           
+        
+        </div>
     </header>
 
     <div class="contenedor-general ">
@@ -53,7 +60,7 @@
     <div class="carrousel">
         <div class="conteCarrousel">
             <div class="itemCarrousel" id="itemCarrousel-1">
-                <div class="itemCarrouselTarjeta"><img src="imagenes/MUSTANG.png" alt=""></div>
+                <div class="itemCarrouselTarjeta"><img src="imagenes/MUSTANG.png" style="width: 100%; height: 600px;" alt=""></div>
                 <div class="itemCarrouselArrows">
                     <a href="#itemCarrousel-3">
                         <i class="fas fa-chevron-left"></i>
@@ -64,7 +71,7 @@
                 </div>
             </div>
             <div class="itemCarrousel" id="itemCarrousel-2">
-                <div class="itemCarrouselTarjeta"><img src="imagenes/RAM.png" alt=""></div>
+                <div class="itemCarrouselTarjeta"><img src="imagenes/RAM.png" style="width: 100%; height: 600px;" alt=""></div>
                 <div class="itemCarrouselArrows">
                     <a href="#itemCarrousel-1">
                         <i class="fas fa-chevron-left"></i>
@@ -75,7 +82,7 @@
                 </div>
             </div>
             <div class="itemCarrousel" id="itemCarrousel-3">
-                <div class="itemCarrouselTarjeta"><img src="imagenes/corvette.png" alt=""></div>
+                <div class="itemCarrouselTarjeta"><img src="imagenes/corvette.png" style="width: 100%; height: 600px;" alt=""></div>
                 <div class="itemCarrouselArrows">
                     <a href="#itemCarrousel-2">
                         <i class="fas fa-chevron-left"></i>
@@ -93,13 +100,40 @@
         </div>
     </div>
 
+    <!--MINI MENU-->
+     <div class="mini-menu">
+        <div class="contenedor-iconos">
+            <div class="contenedor-chat">
+            <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <div class="contenedor-cotizaciones">
+                <a href=""><i class="fa-solid fa-calculator"></i></a>
+            </div>
+            <div class="contenedor-resrva-turnos">
+                <a href=""><i class="fa-solid fa-calendar-days"></i></a> 
+            </div>
+            <div class="contenedor-cntacto">
+                <a href=""><i class="fa-solid fa-wrench"></i></a>
+            </div>
+        </div>
+        <div class="contenedor-titulo">
+            <div><h2>Chatea con Nosotros</h2></div>
+            <div><h2>Solicitar Cotizacion</h2></div>
+            <div><h2>Reservar Turno</h2></div>
+            <div><h2>Servicio Tecnico</h2></div>
+        </div>
+     </div>
+
+
+
     <!--FOTOS DE VEHICULOS -->
-    <div class="autos-variados">
+    <div class="autos-publicidad-general">
+    <div class="autos-publicidad">
         <div><h1>Conoce el Mundo del Automor</h1></div>
         <div><input type="button" value="Ver Todos Los Vehiculos" name="" id=""></div>
         <div><img src="imagenes/RAM.png" alt=""></div>
     </div>
-
+   </div>
         <!--PUBLICIDAD DE VEHICULO-->
        <div class="contenedor-presupuesto">caja2</div>
 
@@ -107,6 +141,7 @@
         <div class="contenedor-publicida">
                 
             <div class="contenedor-cotizacion">
+                 <img src="imagenes/rmodmi8lb.png" style="width: 60%;" alt="">
                  <h1>Plan Rombo</h1>
                  <p>Obtene tu OK en Cuotas</p>
                  <input type="button" value="Presupuestar">
@@ -114,6 +149,7 @@
                 
             
             <div class="imagen-cotizacion">
+                <img src="imagenes/rmodmi8lb.png" style="width: 60%;"  alt="">
                 <H1>Plan Mi 0 KM</H1>
                 <p>Obtene tu 0 KM en el Acto</p>
                 <input type="button" value="Ver Precio">
@@ -210,6 +246,8 @@
         </form>
 </div>
 </div>
+<!--prueba chat online-->
+
 </div>
 </body>
 </html>

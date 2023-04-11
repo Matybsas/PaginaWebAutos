@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background: rgb(255, 255, 255);
+    background: rgb(42, 40, 40);
     color: aliceblue;
 }
 header{
@@ -15,19 +15,21 @@ header{
 .contenedor-general-header{
     width: 100%;
     height: 100%;
-    padding: 15px;
+    padding: 5px;
     background: rgb(29, 28, 28);
+    display: flex;
 }
 
 /* REDES SOCIALES */
-.contenedor-redes-sociales{
-    width: 100%;
+.contenedor-redes{
+    width: 25%;
     display: flex;
     flex-flow: row wrap;
-    align-content: end;
-    justify-content: end;
+    align-content: center;
+    align-items: center;
+    justify-content:space-between;
 }
-.contenedor-redes-sociales ul{
+.contenedor-redes ul{
     list-style: none;
     overflow: hidden;
     margin: 10px;
@@ -35,7 +37,7 @@ header{
     flex-flow: row wrap;
 
 }
-.contenedor-redes-sociales ul li{
+.contenedor-redes ul li{
     background: rgb(255, 79, 79);
     margin: 5px;
     padding: 5px;
@@ -43,7 +45,7 @@ header{
     border: 1px solid rgb(255, 79, 79);
     
 }
-.contenedor-redes-sociales ul li:hover{
+.contenedor-redes ul li:hover{
     background: rgb(38, 36, 36);
     margin: 5px;
     padding: 5px;
@@ -52,13 +54,29 @@ header{
     box-shadow: 2px 2px 7px 2px white;
     
 }
-.contenedor-redes-sociales ul li i{
+.contenedor-redes ul li i{
     text-align: center;
     font-size: 25px;
     color: aliceblue;
 }
+/* CONTENEDOR LOGO*/
+.logo-web{
+  
+  width: 15%;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+}
 
 /* CONTENEDOR MENU*/
+.contedor-menu-general{
+  width: 60%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
 .contedor-menu{
     width: 100%;
     display: flex;
@@ -105,7 +123,7 @@ header{
   
   .conteCarrousel{
     width: 100%;
-    height: 800px;
+    height: 600px;
     overflow: hidden;
     text-align: center;
     
@@ -159,6 +177,45 @@ header{
     color: white;
   }
   
+  /*MINI MENU*/
+  .mini-menu{
+ background: rgb(224, 224, 224);
+ width: 100%;
+ height: 300px;
+ display: flex;
+ flex-flow: row wrap;
+ align-content: center;
+ align-items: center;
+ justify-content:space-evenly;
+  }
+.contenedor-iconos{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}  
+
+ .contenedor-titulo{
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+
+ } 
+.contenedor-chat, .contenedor-cotizaciones, .contenedor-resrva-turnos, .contenedor-cntacto{
+  border: 2px solid black;
+  border-radius: 100px;
+  width: 150px;
+  height: 150px;
+  font-size: 100px;
+  color: #8d99ae;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+}  
+
   /*FORMULARIO ENVIO */
   .contenedor-general-formulario{
     background: rgb(54, 51, 51);
@@ -224,23 +281,34 @@ form i{
  
   .contacto{
     background: rgb(34, 32, 32);
-    width: 30%;
+    width: 55%;
     height: 680px;
     display: flex;
     flex-flow: column wrap;
     align-content: center;
     justify-content:center;
   }
-  /* FOTOS DE VEHICULOS */
-.autos-variados{
+  /* PUBLICIDAD AUTOS */
+.autos-publicidad-general{
+ width: 100%;
+ height: 100%;
+ margin-top: 300px;
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: center;
+ align-content: center; 
+} 
+.autos-publicidad{
   background: rgb(255, 255, 255);
   width: 100%;
+  height: 700px;
   display: flex;
   flex-flow: column;
+  align-content: center;
   align-items: center;
   justify-content: center;
 }
-.autos-variados input{
+.autos-publicidad input{
   background: rgba(255, 0, 47, 0.749);
   margin-top: 5%;
   border: 2px solid rgba(255, 0, 47, 0.749);
@@ -249,7 +317,7 @@ form i{
   padding: 10px;
   font-size: 30px;
 }
-.autos-variados input:hover{
+.autos-publicidad input:hover{
   background: rgba(149, 0, 27, 0.749);
   margin: 5%;
   border: 2px solid rgba(249, 81, 112, 0.749);
@@ -260,7 +328,7 @@ form i{
   font-size: 35px;
 }
 .contenedor-publicida{
- background: rgb(255, 255, 255);
+ background: rgb(39, 34, 34);
   width: 100%;
   height: 100%;
   display: flex;
@@ -269,7 +337,7 @@ form i{
   justify-content: center;
 }
 .contenedor-cotizacion{
-  background: rgb(44, 42, 42);
+   
   width: 45%;
   height: 500px;
   display: flex;
@@ -277,8 +345,29 @@ form i{
   align-content: center;
   justify-content: center;
 }
+.contenedor-cotizacion input{
+  text-align: center;
+  width: 40%;
+  font-size: 25px;
+  color: white;
+  padding: 5px;
+  border: 2px solid #d80032;
+  border-radius: 50px;
+  background: #d80032;
+}
+.contenedor-cotizacion input:hover{
+  text-align: center;
+  width: 45%;
+  font-size: 25px;
+  color: white;
+  padding: 7px;
+  border: 2px solid #2b2d42;
+  border-radius: 50px;
+  background: #2b2d42;
+  box-shadow: 2px 2px 7px 2px #8d99ae;
+}
+
 .imagen-cotizacion{
-  background: rgb(28, 26, 26);
   width: 45%;
   height: 500px;
   display: flex;
@@ -286,6 +375,28 @@ form i{
   align-content: center;
   justify-content: center;
 }
+.imagen-cotizacion input{
+  text-align: center;
+  width: 40%;
+  font-size: 25px;
+  color: white;
+  padding: 5px;
+  border: 2px solid #d80032;
+  border-radius: 50px;
+  background: #d80032;
+}
+.imagen-cotizacion input:hover{
+  text-align: center;
+  width: 45%;
+  font-size: 25px;
+  color: white;
+  padding: 7px;
+  border: 2px solid #2b2d42;
+  border-radius: 50px;
+  background: #2b2d42;
+  box-shadow: 2px 2px 7px 2px #8d99ae;
+}
+
 .contenedor-presupuesto{
   background: rgb(45, 44, 44);
 width: 100%;
