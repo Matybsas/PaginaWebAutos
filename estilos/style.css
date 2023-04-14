@@ -8,7 +8,7 @@ body{
     color: aliceblue;
 }
 header{
-  background: rgba(29, 27, 27, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   width: 100%;
   
 }
@@ -16,7 +16,7 @@ header{
     width: 100%;
     height: 100%;
     padding: 5px;
-    background: rgb(29, 28, 28);
+    background: rgb(235, 233, 233);
     display: flex;
 }
 
