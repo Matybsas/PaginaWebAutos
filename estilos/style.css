@@ -18,6 +18,8 @@ header{
     padding: 5px;
     background: rgb(235, 233, 233);
     display: flex;
+    
+    
 }
 
 /* REDES SOCIALES */
@@ -38,20 +40,20 @@ header{
 
 }
 .contenedor-redes ul li{
-    background: rgb(255, 79, 79);
+    background: rgb(32, 31, 31);
     margin: 5px;
     padding: 5px;
     border-radius: 15px 0px 15px 0px;
-    border: 1px solid rgb(255, 79, 79);
+    border: 1px solid rgb(0, 0, 0);
     
 }
 .contenedor-redes ul li:hover{
-    background: rgb(38, 36, 36);
+    background: rgb(187, 166, 112);;
     margin: 5px;
     padding: 5px;
     border-radius: 0px 15px 0px 15px;
-    border: 1px solid rgb(38, 36, 36);
-    box-shadow: 2px 2px 7px 2px white;
+    border: 1px solid rgb(187, 166, 112);
+    box-shadow: 2px 2px 7px 2px rgb(165, 160, 146);
     
 }
 .contenedor-redes ul li i{
@@ -76,6 +78,8 @@ header{
   align-content: center;
   align-items: center;
   justify-content: center;
+  
+  
 }
 .contedor-menu{
     width: 100%;
@@ -87,33 +91,40 @@ header{
 .contedor-menu ul{
     list-style: none;
     overflow: hidden;
+    
     display: flex;
     flex-flow: row wrap;
 }
 .contedor-menu ul li{
-    background: rgb(246, 90, 90);
-    color: rgb(255, 255, 255);
     margin: 10px;
     padding: 10px;
-    border-radius: 15px 0px 15px 0px;
-    border: 2px solid rgb(246, 90, 90);
-    box-shadow: 2px 2px 5px 2px white;
+    
+    
 }
-.contedor-menu ul li:hover{
-    background: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    border-radius: 0px 15px 0px 15px;
-    border: 2px solid rgb(0, 0, 0);
-    box-shadow: 2px 2px 7px 2px white;
-}
-
 .contedor-menu ul li i{
     margin-right: 10px;
     font-size: 20px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.contedor-menu ul li a{
+ text-decoration: none;
+ color: black;
 }
 
+.contedor-menu ul li :hover{
+  margin-right: 10px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
 
+.contedor-menu ul li a:hover{
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 7px 5px rgb(165, 160, 146);
+  background: rgb(187, 166, 112);
+  color: rgb(250, 248, 248);
+ }
 
 /* CARRUSEL FOTOS */
 .carrousel{
@@ -178,8 +189,8 @@ header{
   }
   
   /*MINI MENU*/
-  .mini-menu{
- background: rgb(224, 224, 224);
+ .mini-menu{
+ background: rgb(209, 207, 207);
  width: 100%;
  height: 300px;
  display: flex;
@@ -187,34 +198,69 @@ header{
  align-content: center;
  align-items: center;
  justify-content:space-evenly;
-  }
-.contenedor-iconos{
-  width: 100%;
+ }
+
+ .contenedor-iconos{
+  width: 80%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
-}  
+  justify-content:center;
+  align-content: center;
 
- .contenedor-titulo{
-  width: 100%;
-  margin-top: 15px;
+ }
+ .contenedor-menu-secundario{
+  width: 33%;
+  height: 100%;
+  margin: 1px;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-
- } 
-.contenedor-chat, .contenedor-cotizaciones, .contenedor-resrva-turnos, .contenedor-cntacto{
-  border: 2px solid black;
-  border-radius: 100px;
-  width: 150px;
-  height: 150px;
-  font-size: 100px;
-  color: #8d99ae;
+  flex-flow: column wrap;
+  align-items: center;
+  align-content: center;
+  justify-content:center;
+ }
+ 
+ .chat, .cotizaciones, .reserva-turnos{
+  width: 36%;
+  height: 100%;
+  margin-top: 25px;
   display: flex;
   flex-flow: row wrap;
   align-content: center;
   justify-content: center;
-}  
+  font-size: 100px;
+  border-radius: 47%;
+  border: 1px solid black;
+ }
+ 
+.chat, .cotizaciones, .reserva-turnos, i{
+  color: black;
+  
+ }
+
+.chat-titulo, .cotizaciones-titulo, .reserva-turnos-titulo{
+display: flex;
+
+margin-top: 10px;
+text-align: center;
+text-decoration: none;
+justify-content: center;
+ }
+ .chat-titulo, .cotizaciones-titulo, .reserva-turnos-titulo, a{
+  text-decoration: none;
+  color: black;
+ }
+ .chat, .cotizaciones, .reserva-turnos, i:hover{
+  color: rgb(187, 166, 112);
+ 
+ }
+ .chat:hover, .cotizaciones:hover, .reserva-turnos:hover{
+  border:2px solid rgb(187, 166, 112);
+ }
+ .chat-titulo, .cotizaciones-titulo, .reserva-turnos-titulo, a:hover{
+color: rgb(187, 166, 112);
+ }
+ 
+
 
   /*FORMULARIO ENVIO */
   .contenedor-general-formulario{
@@ -328,7 +374,7 @@ form i{
   font-size: 35px;
 }
 .contenedor-publicida{
- background: rgb(39, 34, 34);
+ background: hsl(0, 0%, 99%);
   width: 100%;
   height: 100%;
   display: flex;
@@ -337,9 +383,10 @@ form i{
   justify-content: center;
 }
 .contenedor-cotizacion{
-   
   width: 45%;
   height: 500px;
+ color: black;
+ text-align: center;
   display: flex;
   flex-flow: column wrap;
   align-content: center;
@@ -351,9 +398,9 @@ form i{
   font-size: 25px;
   color: white;
   padding: 5px;
-  border: 2px solid #d80032;
+  border: 2px solid #cfc295;
   border-radius: 50px;
-  background: #d80032;
+  background: #cfc295;
 }
 .contenedor-cotizacion input:hover{
   text-align: center;
@@ -361,10 +408,10 @@ form i{
   font-size: 25px;
   color: white;
   padding: 7px;
-  border: 2px solid #2b2d42;
+  border: 2px solid #8c8362;
   border-radius: 50px;
-  background: #2b2d42;
-  box-shadow: 2px 2px 7px 2px #8d99ae;
+  background: #8c8362;
+  box-shadow: 2px 2px 7px 2px #000000;
 }
 
 .imagen-cotizacion{
