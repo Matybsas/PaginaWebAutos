@@ -24,10 +24,11 @@
     align-items: center;
 
 }
-.formulario-presupuesto input{
+.formulario-presupuesto select{
     width: 250px;
     height: 35px;
     border-radius: 5px;
-    color: aliceblue;
+    text-align: center;
+    color: rgb(255, 255, 255);
     background: rgb(51, 49, 49);
 }

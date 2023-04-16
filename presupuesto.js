@@ -3,7 +3,7 @@ $(document).ready(function(){
 cambioMarca();
 
 cambioModelo();
-
+precioFinal();
 
 
 });
@@ -29,8 +29,10 @@ $("#marca").on ("change", function(){
 }
 
 function cambioModelo(){
-    $("#modeloSelect").on ("change", function(){
+      $("#modeloSelect").on ("change", function(){
         limpiarLista('#anioSelect');
+     
+
         let modeloSeleccionado= $("#modeloSelect option:selected").text();
         
         autos.forEach(auto=> {
@@ -43,6 +45,20 @@ function cambioModelo(){
     });
 }
 
+function precioFinal(){
+    $("#anioSelect").on ("change", function(){
+       limpiarLista('#txImporte');
+        let precioSeleccionado= $("#anioSelect option:selected").text();
+        
+        autos.forEach(auto=> {
+        if (precioSeleccionado.toLowerCase()=== auto.anio.toLowerCase()){
+            
+            $("#txImporte").append (new Option (auto.precio, auto.id));
+        }
+        });
+        
+    });
+}
 
 
 //ARRAY DE AUTOS 
@@ -123,5 +139,12 @@ let autos = [
     modelo: "Durango",
     anio:"2023",
     precio:"100000"
+},
+{
+    id:12,
+    marca: "Ford",
+    modelo: "Falcon",
+    anio:"1989",
+    precio:"154000"
 },
 ]
