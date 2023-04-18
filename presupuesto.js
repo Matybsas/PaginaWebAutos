@@ -73,8 +73,8 @@ let autos = [
 {
     id:2,
     marca: "Ford",
-    modelo: "Falcon",
-    anio:"1986",
+    modelo: "Ka",
+    anio:"2014",
     precio:"100000"
 },
 {
@@ -135,16 +135,16 @@ let autos = [
 },
 {
     id:11,
-    marca: "Dodge",
-    modelo: "Durango",
+    marca: "Peugot",
+    modelo: "2008",
     anio:"2023",
     precio:"100000"
 },
 {
     id:12,
-    marca: "Ford",
-    modelo: "Falcon",
-    anio:"1989",
+    marca: "Chevrolet",
+    modelo: "Cruze",
+    anio:"2018",
     precio:"154000"
 },
 ]
