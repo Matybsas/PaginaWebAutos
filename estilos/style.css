@@ -385,18 +385,18 @@ form i{
   justify-content: center;
 }
 .autos-publicidad input{
-  background: rgba(255, 0, 47, 0.749);
+  background: #cfc295;
   margin-top: 5%;
-  border: 2px solid rgba(255, 0, 47, 0.749);
+  border: 2px solid #cfc295;
   border-radius: 30px;
   color: aliceblue;
   padding: 10px;
   font-size: 30px;
 }
 .autos-publicidad input:hover{
-  background: rgba(149, 0, 27, 0.749);
+  background: #8c8362;
   margin: 5%;
-  border: 2px solid rgba(249, 81, 112, 0.749);
+  border: 2px solid #8c8362;
   box-shadow: 2px 2px 7px 2px white;
   border-radius: 30px;
   color: aliceblue;
