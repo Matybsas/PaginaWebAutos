@@ -68,9 +68,11 @@ function validarFormulario(){
 		}
 	});
 }
+
 function mensajeEnviado(){
 	//verificacion de formulario
-	if (validarFormulario() === true){
+    if (validarFormulario() === true){
+
 	Swal.fire({
 		position: 'top-center',
 		icon: 'success',
@@ -79,5 +81,4 @@ function mensajeEnviado(){
 		timer: 1500
 	  })
 	}
-  
-}
+}  
