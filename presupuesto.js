@@ -31,8 +31,6 @@ $("#marca").on ("change", function(){
 function cambioModelo(){
       $("#modeloSelect").on ("change", function(){
         limpiarLista('#anioSelect');
-     
-
         let modeloSeleccionado= $("#modeloSelect option:selected").text();
         
         autos.forEach(auto=> {
@@ -73,7 +71,7 @@ let autos = [
 {
     id:2,
     marca: "Ford",
-    modelo: "Ka",
+    modelo: "Focus",
     anio:"2014",
     precio:"100000"
 },

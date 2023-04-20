@@ -65,32 +65,39 @@
 
     <!--FORMULARIO COTIZACION-->
     <div class="contenedor-general-presupuesto">
-        <div><h1>Completa el Formulario para Cotizar tu Vehiculo</h1></div>
+        
     <form class="formulario-presupuesto" name="autos-form" action="">
-        <label for="" >Marca</label>
-        <select name="" id="marca">
-            <option value="seleccionar">Seleccionar</option>
-            <option value="ford">Ford</option>
-            <option value="dodge">Dodge</option>
-            <option value="peugeot">Peugeot</option>
-            <option value="chevrolet">Chevrolet</option>
-        </select>
-        
-        <label for="">Modelo</label>
-        <select name="" id="modeloSelect">
-            <option selected>Seleccionar</option>
-        </select>
-        
-        <label for="">Anio</label>
-        <select name=""  id="anioSelect">
-            <option selected>Seleccionar</option>
-        </select>
-
-        <label for="" >Importe</label>
-        <select name=""  id="txImporte">
-            <option selected></option>
-        </select>
-
+        <fieldset class="col-12 text-center">
+            <legend>Formulario de Cotizacion</legend>
+        </fieldset>
+        <div class="content-marca">
+             <label for="" > Marca del Vehiculo</label>
+             <select name="" id="marca">
+                <option value="seleccionar">Seleccionar</option>
+                <option value="ford">Ford</option>
+                <option value="dodge">Dodge</option>
+                <option value="peugeot">Peugeot</option>
+                <option value="chevrolet">Chevrolet</option>
+             </select>
+        </div>
+        <div class="content-modelo">
+                <label for="">Modelo del Vehiculo</label>
+                <select name="" id="modeloSelect">
+                    <option selected>Seleccionar</option>
+                </select>
+        </div>
+        <div class="content-anio">
+                <label for="">Año del Vehiculo</label> 
+                <select name=""  id="anioSelect">
+                    <option selected>Seleccionar</option>
+                </select>
+        </div>
+        <div class="content-importe">
+                <label for="" >Importe del Vehiculo</label>
+                <select name=""  id="txImporte">
+                    <option selected></option>
+                </select>
+        </div>
     </form>
 </div>
 <footer>
