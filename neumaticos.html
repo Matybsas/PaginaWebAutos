@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="estilos/neumaticos.css">
     <!--ENLACE HOJA DE ESTILO GENERAL-->
     <link rel="stylesheet" href="estilos/style.css">
+    <!--Alerta SweetAlert2-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Neumaticos</title>
 </head>
 <body>
@@ -59,15 +61,24 @@
         </div>
     </header>
 
-
-    <form action="">
-<div class="col-12">
-    <label for="intputParaMostrar">Zona Horaria:</label><input type="text" id="intputParaMostrar" class="form-control" disabled>
-</div>
-<div class="col-12">
-    <label for="intputParaFecha">Ubicacion: </label><input type="text" id="intputParaFecha" class="form-control" disabled>
-</div>
-    </form>
+    
+       <div class="container">
+        <div class="row-8">
+            <div class="col-12">
+              <form action="">
+                <div class="col-10">
+                    <label for="mostrarProbabilidad">Probabilidad de Lluvias</label>
+                    <input type="text" id="mostrarProbabilidad">
+                </div>
+            
+                <div class="col-4">
+                    <button type="button"  onclick="obtenerProbabilidad()" class="btn btn-dark">Ver Neumaticos</button>
+                </div>
+              </form> 
+            </div>
+            </div>
+    
+      
     <footer>
         <div class="contenedor-footer">
         <div class="imagen-footer">
