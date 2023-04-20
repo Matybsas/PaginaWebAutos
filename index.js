@@ -1,84 +1,101 @@
-$(document).ready(function(){
-
-	//BOTON DE SCROLL-UP
-	$('.ir-inicio').click(function(){
+let validacion;
+$(document).ready(function () {
+//BOTON DE SCROLL-UP
+	$('.ir-inicio').click(function () {
 		$('body, html').animate({
 			scrollTop: '0px'
 		}, 300);
 	});
-
-	$(window).scroll(function(){
-		if( $(this).scrollTop() > 0 ){
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 0) {
 			$('.ir-inicio').slideDown(300);
 		} else {
 			$('.ir-inicio').slideUp(300);
 		}
 	});
-
 });
-
-function validarFormulario(){
-	let nombre=document.getElementById('nombre');
-	let apellido=document.getElementById('apellido');
-	let direccion=document.getElementById('direccion');
-	let telefono=document.getElementById('telefono');
-	let email=document.getElementById('email');
-    let consulta=document.getElementById('consulta');
-	
-    nombre.addEventListener("input", function(){
-		if(nombre.validity.valid){
-			nombre.setCustomValidity("Debes Ingresar un Nombre");
-		}else{
-			nombre.setCustomValidity("");
+//FORMULARIO CONTACTO
+function validarFormularios() {
+	document.addEventListener("DOMContentLoaded", function() {
+	document.getElementById("contacto").addEventListener('submit', validarFormulario); 
+	  });
+	  
+	  function validarFormulario(evento) {
+		evento.preventDefault();
+		let nombre = document.getElementById('nombre').value;
+		if(nombre.length == 0) {
+			Swal.fire({
+				icon: 'error',
+				title: 'Por Favor Ingresa un Nombre!',
+				html: '<img src="imagenes/logo.png" style="width: 100px;" alt="">',
+				showConfirmButton: false,
+				timer: 3500
+			  })
+		  return;
 		}
-	});
-	apellido.addEventListener("input", function(event){
-		if(apellido.validity.valid){
-			apellido.setCustomValidity("Debes Ingresar un Apellido");
-		}else{
-			apellido.setCustomValidity("");
+		let apellido = document.getElementById('apellido').value;
+		if (apellido.length < 6) {
+			Swal.fire({
+				icon: 'error',
+				title: 'Por Favor Ingresa un Apellido!',
+				html: '<img src="imagenes/logo.png" style="width: 100px;" alt="">',
+				showConfirmButton: false,
+				timer: 3500
+			  })
+		  return;
 		}
-	});
-	direccion.addEventListener("input", function(event){
-		if(direccion.validity.valid){
-			direccion.setCustomValidity("Debes Ingresar una Direccion");
-		}else{
-			direccion.setCustomValidity("");
+		let direccion = document.getElementById('direccion').value;
+		if (direccion.length < 6) {
+			Swal.fire({
+				icon: 'error',
+				title: 'Por Favor Ingresa una Direccion!',
+				html: '<img src="imagenes/logo.png" style="width: 100px;" alt="">',
+				showConfirmButton: false,
+				timer: 3500
+			  })
+		  return;
 		}
-	});
-	telefono.addEventListener("input", function(event){
-		if(telefono.validity.valid){
-			telefono.setCustomValidity("Debes Ingresar un Numer de Telefono");
-		}else{
-			telefono.setCustomValidity("");
+		let telefono = document.getElementById('telefono').value;
+		if (telefono.length < 6) {
+			Swal.fire({
+				icon: 'error',
+				title: 'Por Favor Ingresa un Numero de Telefono!',
+				html: '<img src="imagenes/logo.png" style="width: 100px;" alt="">',
+				showConfirmButton: false,
+				timer: 3500
+			  })
+		  return;
 		}
-	});
-	email.addEventListener("input", function (event) {
-		if (email.validity.typeMismatch) {
-		  email.setCustomValidity("¡Se esperaba una dirección de correo electrónico!");
-		} else {
-		  email.setCustomValidity("");
+		let email = document.getElementById('email').value;
+		if (email.length < 6) {
+			Swal.fire({
+				icon: 'error',
+				title: 'Por Favor Ingresa un E-mail Valido!',
+				html: '<img src="imagenes/logo.png" style="width: 100px;" alt="">',
+				showConfirmButton: false,
+				timer: 3500
+			  })
+		  return;
 		}
-	});
-	consulta.addEventListener("input", function(event){
-		if(consulta.validity.valid){
-			consulta.setCustomValidity("Debes Ingresar un Numer de Telefono");
-		}else{
-			consulta.setCustomValidity("");
+		let consulta = document.getElementById('consulta').value;
+		if (consulta.length < 6) {
+			Swal.fire({
+				icon: 'error',
+				title: 'Por Favor Ingresa una Consulta!',
+				html: '<img src="imagenes/logo.png" style="width: 100px;" alt="">',
+				showConfirmButton: false,
+				timer: 3500
+			  })
+		  return;
 		}
-	});
+		this.submit(Swal.fire({
+			position: 'top-center',
+			icon: 'success',
+			title: `hola ${nombre} ${apellido}, Tu Consulta Fue Enviado Exitosamente, a la Brevedad nos Pondremos en Contaco `,
+			html: '<img src="imagenes/logo.png" style="width: 100px;" alt="">',
+			showConfirmButton: false,
+			timer: 5500
+		}));
+	  }
 }
-
-function mensajeEnviado(){
-	//verificacion de formulario
-    if (validarFormulario() === true){
-
-	Swal.fire({
-		position: 'top-center',
-		icon: 'success',
-		title:`hola ${nombre} ${apellido}, Tu Consulta Fue Enviado Exitosamente, a la Brevedad nos Pondremos en Contaco `,
-		showConfirmButton: false,
-		timer: 1500
-	  })
-	}
-}  
+validacion = validarFormularios();
