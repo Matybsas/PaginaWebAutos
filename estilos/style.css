@@ -638,13 +638,11 @@ form button:hover {
   .contenedor-cotizacion input {
     width: 60%;
     font-size: 20px;
-
   }
-
+  
   .contenedor-cotizacion input:hover {
     width: 60%;
     font-size: 20px;
-
   }
 
 }
