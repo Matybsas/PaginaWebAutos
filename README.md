@@ -1,0 +1,1 @@
+La pagina esta en remodelacion, motivo por el cual va a estar en constante actualizaciones hasta que este modificada, tambien si utilizas el codigo vas a encontrar que le faltan cosas justamente porque se esta modificando el codigo, Gracias 
