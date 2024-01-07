@@ -32,7 +32,7 @@ $(document).ready(function () {
 
 probabilidad = $('#mostrarProbabilidad').val();
 function obtenerProbabilidad() {
-    if (probabilidad >= 30) {
+    if (probabilidad >= 50) {
         Swal.fire({
             position: 'top-center',
             icon: 'success',
