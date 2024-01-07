@@ -21,7 +21,20 @@ body {
   justify-content: center;
 }
 
-
+/**SCROLL UP*/
+.ir-inicio{
+  right: 20px;
+  bottom: 20px;
+  position: fixed;
+  padding: 0 10px;
+  background-color: rgba(127, 128, 102, 0.926);
+  border: 4px solid rgb(203, 209, 164);
+  border-radius:50px;
+}
+.ir-inicio a {
+  color: rgb(176, 179, 152);
+  font-size: 2vw;
+}
 /**MENU PRINCIPAL HEADER*/
 header {
   width: 100%;
@@ -425,6 +438,7 @@ header {
 .contenedor-general-formulario{
       width: 90%;
       height: auto;
+      margin-top: 30px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -432,16 +446,48 @@ header {
 
 .conteiner__ubicacion_form{
   width: 50%;
-  height: auto;
+  height: 500px;
   background-color: rgba(0, 0, 0, 0.442);
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
 }
+.conteiner__ubicacion_form h2{
+  width: 100%;
+  text-align: center;
+  font-size: 2vw;
+}
+.conteiner__Dato_contactos{
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.conteiner__Dato_contactos h3{
+  width: 13%;
+  height: 30px;
+  font-size: 0.8vw;
+  font-weight: 600;
+  display: flex;
+  justify-content:flex-start ;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-right: 10px;
+}
+.conteiner__Dato_contactos p{
+  width: 50%;
+  height: 30px;
+  font-size: 0.8vw;
+  display: flex;
+  justify-content:flex-start ;
+  align-items: center;
+}
 form{
   width: 50%;
-  height: auto;
+  height: 500px;
   background-color: rgba(0, 0, 0, 0.442);
   display: flex;
   flex-flow: column wrap;
@@ -499,4 +545,65 @@ form button{
   padding: .5% 2%;
   margin-right: 15px;
   border-radius: 50px;
+  border: none;
+  box-shadow: 2px 2px 7px rgb(255, 255, 255);
+  background-color: rgb(108, 104, 84);
+
+}
+
+form button:hover{
+  color: white;
+  background-color: rgb(174, 170, 149);
+}
+
+
+/**FOOTER*/
+footer{
+  width: 100%;
+  height: auto;
+  color: black;
+  background-color: white;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 7px rgb(0, 0, 0);
+}
+.contenedor-footer {
+  width: 90%;
+  height: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.imagen-footer{
+ width: 20%;
+}
+
+.info-footer{
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+.copy-footer{
+  width: 90%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.copy-footer a {
+  text-decoration: none;
+  color: rgb(243, 175, 48);
+  font-weight: 700;
+}
+
+.copy-footer a:hover{
+  color:rgb(12, 165, 185);
+  text-shadow: 2px 2px 2px black;
 }
